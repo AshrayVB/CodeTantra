@@ -47,6 +47,7 @@ import java.util.Scanner;
 	        int totalMarks = subject1 + subject2 + subject3 + subject4 + subject5 + subject6;
 	        int percentage = (int) totalMarks / 6;
 
+		// convert int to double datatype 
 	        double per = (double) percentage;
 	        
 	        // Display the result
