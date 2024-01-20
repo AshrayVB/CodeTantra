@@ -1,3 +1,12 @@
+// Write a program to convert rupees to dollars. 60 rupees=1 dollar. 
+// Sample Test Cases
+//     Test case 1
+//         Enter·INR·to·convert·into·USD:·870	
+//         USD:·14.5
+//     Test case 2
+//         Enter·INR·to·convert·into·USD:·60	
+//         USD:·1.0
+
 package Module1;
 import java.util.Scanner;
 
