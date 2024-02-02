@@ -21,7 +21,6 @@ package Module1;
 
 //Filename: NuberPalindrome
 class NumberPalindrome {
-	
 	public void isNumberPalindrome(int n) {
 		int r,sum=0,temp;
 		temp=n;
