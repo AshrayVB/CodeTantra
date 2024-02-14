@@ -1,3 +1,48 @@
+#include <math.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+void updateElement(char *tree, int arraySize, char s, char t) {
+  for (int i = 0; i < arraySize; i++) {
+    if (tree[i] == s) {
+      tree[i] = t;
+    }
+  }
+}
+int setRoot(int dataKey, char *tree) {
+  tree[0]=dataKey;
+  	return 0;
+}
+
+int addLeft(char dataKey, int parentIndex, char *tree) {
+  if(tree[parentIndex]=='\0'){
+  	printf("No parent found\n");
+  	return -1;
+  }
+  	int leftChildIndex=2*parentIndex+1;
+  	tree[leftChildIndex]=dataKey;
+  	return leftChildIndex;
+}
+
+int addRight(char dataKey, int parentIndex, char *tree) {
+  if(tree[parentIndex]=='\0'){
+  		printf("No parent found\n");
+  		return -1;
+  	}
+  	int rightChildIndex=2*parentIndex+2;
+  	tree[rightChildIndex]=dataKey;
+  	return rightChildIndex;
+}
+
+int displayTree(char *tree, int arraySize) {
+	for(int i=0;i<arraySize;i++)
+		{
+			if(tree[i]!='\0')
+				printf("%c ",tree[i]);
+		}
+  }
+
 int deleteNode(char *tree, char dataKey, int arraySize) {
   for(int i=0;i<arraySize;i++){
   		if(tree[i]==dataKey){
